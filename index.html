@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integrador JS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container_principalHeader">
+        <div class="headerLogo">
+          <h1>Cosmo <span>Burger</span></h1>
+        </div>
+        <div class="headerSearch">
+          <input id="inputHeader" class="inputHeader" placeholder="Ingrese un elemento" type="text">
+          <button class="buttonSearch" id="buttonSearch">Buscar 
+            <img src="src/icons/SearchIcon.svg" alt="Search Icon"/>
+          </button>
+        </div>
+        <div>
+          <button class="buttonAdd" id="buttonAdd">Agregar Elemento
+            <img src="src/icons/AddIcon.svg" alt="Search Icon"/>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <div class="container_view">
+        <!-- Aside -->
+        <aside class="listAside">
+          <h2>Categorías 
+            <img src="src/icons/MenuIcon.svg" alt="Search Icon"/>
+          </h2>
+          <ul id="listFilter"></ul>
+        </aside>
+        <!-- Store -->
+        <div class="storeContainer" id="storeContainer">
+
+        </div>
+      </div>
+      <!-- Popup Agregar Elemento -->
+       <div class="popUpContainerBg" id="modalPopup">
+        <div class="popUpContainerFront">
+          <h1 class="popUpTitle"> Agregar o modificar un producto</h1>
+          <div class="popUpInputs">
+            <input type="text" id="name" placeholder="Ingrese un nombre">
+            <input type="text" id="img" placeholder="Ingrese una imagen">
+            <input type="number" id="precio" placeholder="precio" value="0">
+            <select id="categoria">
+              <option>Seleccione una categoría</option>
+              <option>Gaseosas</option>
+              <option>Hamburguesas</option>
+              <option>Papas</option>
+            </select>
+          </div>
+          <div class="popUpButtons">
+            <button class="buttonPopUp cancel" id="cancelButton">Cancelar</button>
+            <button class="buttonPopUp accept" id="acceptButton">Aceptar</button>
+            <button class="buttonPopUp delete" id="deleteButton">Eliminar</button>
+          </div>
+        </div>
+       </div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

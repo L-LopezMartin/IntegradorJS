@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+:root{
+  --bgColor1: #0a172c;
+  --bgColor2: #3a2780;
+  --bgColor3: #0f295a;
+  --mainColor1: #8d5db9;
+  --mainColor2: #e0e2d7;
+  --mainColor3: #c8cac1;
+  --mainColor4: #4d75ca;
+}
+
+
+/* ==== Header ==== */
+/* #region Header Styles*/
+.container_principalHeader{
+  height: 70px;
+  padding-left:5vw;
+  padding-right: 5vw;
+  background-color: var(--bgColor3);
+  display: grid;
+  grid-template-columns: 15vw 55% 20vw;
+  align-items: center;
+}
+.headerLogo{
+  color: var(--mainColor1);
+}
+.headerLogo span{
+  color: var(--mainColor3);
+}
+.headerSearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+.inputHeader{
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.4rem;
+  outline: none;
+  height: 3vh;
+  width: 50%;
+  font-size: 2vh;
+  background-color: var(--bgColor2);
+  color: var(--mainColor2);
+  font-size: 20px;
+  font-weight: bold;
+}
+.inputHeader::placeholder{
+  color: var(--mainColor3);
+  font-size: 16px;
+  font-weight: normal;
+}
+.buttonSearch{
+  border: 2px solid var(--mainColor1);
+  background-color: transparent;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  width: 100px;
+  background-color: var(--bgColor2);
+  color: var(--mainColor2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: .2s ease;
+}
+.buttonSearch:hover{
+  cursor: pointer;
+  background-color: var(--mainColor1);
+}
+.buttonAdd{
+  width: 100%;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  border: 2px solid var(--mainColor1);
+  background-color: var(--bgColor2);
+  color: var(--mainColor2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonAdd:hover{
+  cursor: pointer;
+  background-color: var(--mainColor1);
+  transition: .2s ease;
+}
+/* #endregion */
+
+
+/* ===== Main ===== */
+
+.container_view{
+  display: grid;
+  grid-template-columns: 0.25fr 0.75fr;
+}
+
+/* #region List Aside */
+.listAside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bgColor1);
+  color: var(--mainColor2);
+  border-right: var(--bgColor2) solid 5px;
+}
+.listAside h2 {
+  margin-top: 3vh;
+  font-size: 32px;
+  color: var(--mainColor1)
+}
+.listAside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  list-style: none;
+  margin-top: 3vh;
+}
+.listAside li{
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.listAside li:hover{
+  cursor: pointer;
+  background-color: var(--bgColor2);
+}
+.liActive{
+  background-color: var(--bgColor2);
+}
+/* #endregion */
+
+/* Store */
+.storeContainer{
+  background-color: var(--bgColor1);
+  padding: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.productCategory{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgColor3);
+  padding: 30px;
+  border-radius: 20px;
+}
+.productCategory h3{
+  color: var(--mainColor1);
+  font-size: 2rem;
+  border-bottom: solid 1px var(--mainColor1);
+  margin-bottom: 2vh;
+}
+.containerProduct{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 2vh;
+}
+.productCard{
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--mainColor4);
+  transition: .2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: var(--bgColor1) 4px solid;
+  border-radius: 5%;
+}
+.productCard img{
+  width: 200px;
+  height: auto;
+  border: var(--bgColor2) 4px solid;
+  border-radius: 5%;
+}
+.productCard:hover{
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+/* Popup */
+
+.popUpContainerBg{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+}
+.popUpContainerFront{
+  width: 40%;
+  height: 50%;
+  background-color: var(--bgColor2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.popUpTitle{
+
+}
+.popUpInputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  width: 100%;
+}
+.popUpInputs input{
+  border-radius: 5px;
+  padding: 0.4rem;
+  width: 60%;
+}
+.popUpInputs select{
+  border-radius: 5px;
+  padding: 0.4rem;
+  width: 60%;
+}
+.popUpButtons{
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+}
