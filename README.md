@@ -7,4 +7,4 @@
 
 
 <h3>Deploy de la página</h3>
-<a href="https://l-lopezmartin.github.io/IntegradorJS/">Link</a>
+<a href="https://integrador-qe609kl8j-leandro-lopezs-projects.vercel.app">Link</a>
