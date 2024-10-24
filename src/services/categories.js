@@ -1,7 +1,7 @@
 // Categoria
 
 import { categoriaActiva } from "../../main";
-import { handleGetProductLS } from "../persistence/localstorage";
+import { handleGetProductLS } from "../persistence/localStorage";
 import { handleRenderList } from "../views/store";
 
 const handleFilterProductsByCategory = (categoryIn) =>{

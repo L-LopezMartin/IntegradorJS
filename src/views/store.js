@@ -1,7 +1,7 @@
 // Store
 
 import { setProductoActivo } from "../../main";
-import { handleGetProductLS } from "../persistence/localstorage";
+import { handleGetProductLS } from "../persistence/localStorage";
 import { openModal } from "./modal";
 
 

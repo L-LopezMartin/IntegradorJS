@@ -1,7 +1,7 @@
 // ====== PRODUCTO
 
 import { productoActivo } from "../../main";
-import { handleGetProductLS, setInLS } from "../persistence/localstorage";
+import { handleGetProductLS, setInLS } from "../persistence/localStorage";
 import { closeModal } from "../views/modal";
 import { handleGetProductsToStore, handleRenderList } from "../views/store";
 import Swal from 'sweetalert2';
