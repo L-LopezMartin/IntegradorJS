@@ -107,6 +107,7 @@
   background-color: var(--bgColor1);
   color: var(--mainColor2);
   border-right: var(--bgColor2) solid 5px;
+  min-height: 92vh;
 }
 .listAside h2 {
   margin-top: 3vh;
@@ -136,6 +137,7 @@
 
 /* Store */
 .storeContainer{
+  min-height: 92vh;
   background-color: var(--bgColor1);
   padding: 2vh;
   display: flex;
@@ -213,7 +215,9 @@
   align-items: center;
 }
 .popUpTitle{
-
+  color: var(--mainColor2);
+  border-bottom: solid 5px var(--mainColor1);
+  border-radius: 5px;
 }
 .popUpInputs{
   display: flex;
@@ -225,7 +229,7 @@
 }
 .popUpInputs input{
   border-radius: 5px;
-  padding: 0.4rem;
+  padding: 0.5rem;
   width: 60%;
 }
 .popUpInputs select{
@@ -236,5 +240,23 @@
 .popUpButtons{
   display: flex;
   flex-direction: row;
-  gap: 2vw;
+  gap: 5vw;
+}
+
+.buttonPopUp{
+  padding: 0.8rem;
+  border-radius: 5px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.popUpButtons .accept{
+  background-color: rgb(27, 172, 58);
+}
+.popUpButtons .cancel{
+  background-color: rgb(192, 180, 10);
+}
+.popUpButtons .delete{
+  background-color: rgb(189, 12, 12);
 }
